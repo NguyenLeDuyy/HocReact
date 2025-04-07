@@ -6,10 +6,11 @@ import Car from './w3school/Car';
 import reportWebVitals from './reportWebVitals';
 
 function Garage() {
+  const carInfo = { name: "Audi", model: "Premium" };
   return (
     <>
       <h1>Who lives in my Garage?</h1>
-      <Car />
+      <Car brand={carInfo} />
     </>
   );
 }
